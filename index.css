@@ -1,0 +1,46 @@
+#gameFrame {
+
+	background-color: black;
+	height: 600px;
+	width: 800px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#healthBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: coral;
+	transition: width .5s;
+}
+
+.enemy {
+	width: 150px;
+	height: 400px;
+	position: absolute;
+	background-color: beige;
+	bottom: -400px;
+	transition: all .5s;
+}
+
+.enemy.showing {
+	bottom: 0;
+}
+
+.enemy.shooting {
+	background-color: red;
+}
+
+
+#enemy1 { left: 5px; }
+#enemy2 { left: 345px; }
+
+
+.enemy.dead {
+	background-color: rgb(18, 166, 224);
+	height: 50px;
+}
